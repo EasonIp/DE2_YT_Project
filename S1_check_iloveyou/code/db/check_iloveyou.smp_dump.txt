@@ -1,0 +1,15 @@
+
+State Machine - |check_iloveyou|state
+Name state.Disp_gantan state.Check_u state.Check_o2 state.Check_Y state.Disp_blank2 state.Check_e state.Check_v state.Check_o1 state.Check_L state.Disp_blank1 state.Check_I state.IDEL 
+state.IDEL 0 0 0 0 0 0 0 0 0 0 0 0 
+state.Check_I 0 0 0 0 0 0 0 0 0 0 1 1 
+state.Disp_blank1 0 0 0 0 0 0 0 0 0 1 0 1 
+state.Check_L 0 0 0 0 0 0 0 0 1 0 0 1 
+state.Check_o1 0 0 0 0 0 0 0 1 0 0 0 1 
+state.Check_v 0 0 0 0 0 0 1 0 0 0 0 1 
+state.Check_e 0 0 0 0 0 1 0 0 0 0 0 1 
+state.Disp_blank2 0 0 0 0 1 0 0 0 0 0 0 1 
+state.Check_Y 0 0 0 1 0 0 0 0 0 0 0 1 
+state.Check_o2 0 0 1 0 0 0 0 0 0 0 0 1 
+state.Check_u 0 1 0 0 0 0 0 0 0 0 0 1 
+state.Disp_gantan 1 0 0 0 0 0 0 0 0 0 0 1 

@@ -1,0 +1,26 @@
+/*
+ * seg_pio.c
+ *
+ *  Created on: 2017-8-31
+ *      Author: EasonIp
+ */
+
+#include <stdio.h>
+#include "system.h"
+#include "io.h"
+
+static unsigned char azmap[] = {0X40,0X79,OX24,OX30,OX19,OX12,OX02,OX78,OX00,OX10,OX08,OX03,OX46,OX21,OX06,OX0E};
+
+int main()
+{
+	printf("fpga\n");
+	unsigned char i=0;
+	while(1)
+	{
+		for(i=0:i<16:i++)
+		{
+			IOWR(SEG7_PIO_BASE,0,azmap[i]);
+			usleep(500*1000)
+		}
+	}
+}

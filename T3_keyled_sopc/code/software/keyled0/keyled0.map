@@ -1,0 +1,535 @@
+Archive member included because of file (symbol)
+
+../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+                              obj/default/key.o (alt_ic_isr_register)
+../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              ../keyled0_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_handler)
+../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              ../keyled0_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+                              ../keyled0_bsp//obj/HAL/src/crt0.o (alt_load)
+../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+                              ../keyled0_bsp//obj/HAL/src/crt0.o (alt_main)
+../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../keyled0_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../keyled0_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../keyled0_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+edge_capture        0x4               obj/default/key.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x00010000         0x00000020
+data             0x00010020         0x00009fe0
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../keyled0_bsp//obj/HAL/src/crt0.o
+                0x0001000c                exit = _exit
+LOAD obj/default/key.o
+LOAD c:/program/altera/13.0/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/program/altera/13.0/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/program/altera/13.0/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/program/altera/13.0/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD c:/program/altera/13.0/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+LOAD ../keyled0_bsp/\libhal_bsp.a
+END GROUP
+LOAD c:/program/altera/13.0/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+                0x00010000                __alt_mem_data = 0x10000
+
+.entry          0x00010000       0x20
+ *(.entry)
+ .entry         0x00010000       0x20 ../keyled0_bsp//obj/HAL/src/crt0.o
+                0x00010000                __reset
+                0x0001000c                _exit
+
+.exceptions     0x00010020      0x194
+                0x00010020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00010020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x00010020        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x00010020                alt_irq_entry
+ .exceptions.entry.label
+                0x00010020        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x00010020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x00010020       0x54 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x00010074       0x10 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x00010084        0x4 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x00010088        0x4 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x0001008c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x0001008c        0x8 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x00010094        0x4 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00010098        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00010098        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00010098       0x54 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x000100ec       0xc8 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x000100ec                alt_irq_handler
+                0x000101b4                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00010020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x000101b4      0x644
+                0x000101b4                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x000101b4       0x3c ../keyled0_bsp//obj/HAL/src/crt0.o
+                0x000101b4                _start
+ .text          0x000101f0      0x168 obj/default/key.o
+                0x000102a4                main
+ .text          0x00010358      0x1d4 ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+                0x00010358                alt_ic_isr_register
+                0x000103a8                alt_ic_irq_enable
+                0x00010444                alt_ic_irq_disable
+                0x000104e4                alt_ic_irq_enabled
+ .text          0x0001052c       0xf8 ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x0001052c                alt_iic_isr_register
+ .text          0x00010624        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x00010624        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x00010624        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x00010624       0xec ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+                0x00010624                alt_load
+ .text          0x00010710       0x40 ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+                0x00010710                alt_main
+ .text          0x00010750       0x50 ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00010750                alt_irq_init
+                0x00010784                alt_sys_init
+ .text          0x000107a0       0x1c ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x000107a0                alt_dcache_flush_all
+ .text          0x000107bc        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x000107bc       0x1c ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000107bc                alt_icache_flush_all
+ .text          0x000107d8       0x20 ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x000107d8                altera_nios2_qsys_irq_init
+ *(.gnu.warning.*)
+ *(.fini)
+                0x000107f8                PROVIDE (__etext, ABSOLUTE (.))
+                0x000107f8                PROVIDE (_etext, ABSOLUTE (.))
+                0x000107f8                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x000107f8                . = ALIGN (0x4)
+                0x000107f8                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x000107f8                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x000107f8                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x000107f8                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x000107f8                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x000107f8                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table)
+ *(.dynamic)
+                0x000107f8                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x000107f8                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x000107f8                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x000107f8                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x000107f8                . = ALIGN (0x4)
+
+.rodata         0x000107f8       0x14
+                0x000107f8                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x000107f8                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000107f8       0x14 obj/default/key.o
+ *(.rodata1)
+                0x0001080c                . = ALIGN (0x4)
+                0x0001080c                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x000107f8                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x0001080c        0x4 load address 0x00010810
+                0x0001080c                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0001080c                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0001080c        0x0 ../keyled0_bsp//obj/HAL/src/crt0.o
+ .data          0x0001080c        0x0 obj/default/key.o
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0001080c        0x0 ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x0001880c                _gp = ABSOLUTE ((. + 0x8000))
+                0x0001880c                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0001080c        0x4 ../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0001080c                alt_priority_mask
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00010810                . = ALIGN (0x4)
+                0x00010810                _edata = ABSOLUTE (.)
+                0x00010810                PROVIDE (edata, ABSOLUTE (.))
+                0x00010810                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00010810                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x00010814      0x114
+                0x00010814                __bss_start = ABSOLUTE (.)
+                0x00010814                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x00010814                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00010814        0x4 obj/default/key.o
+                0x00010814                edge_capture
+ .sbss          0x00010818        0x4 ../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00010818                alt_irq_active
+ .sbss          0x0001081c        0xc ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+                0x0001081c                alt_argc
+                0x00010820                alt_argv
+                0x00010824                alt_envp
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00010828                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00010828                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00010828        0x0 ../keyled0_bsp//obj/HAL/src/crt0.o
+ .bss           0x00010828        0x0 obj/default/key.o
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00010828        0x0 ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ *(COMMON)
+ COMMON         0x00010828      0x100 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00010828                alt_irq
+                0x00010928                . = ALIGN (0x4)
+                0x00010928                __bss_end = ABSOLUTE (.)
+
+.data           0x00010928        0x0
+                0x00010928                PROVIDE (_alt_partition_data_start, ABSOLUTE (.))
+ *(.data. data.*)
+                0x00010928                . = ALIGN (0x4)
+                0x00010928                PROVIDE (_alt_partition_data_end, ABSOLUTE (.))
+                0x00010928                _end = ABSOLUTE (.)
+                0x00010928                end = ABSOLUTE (.)
+                0x00010928                __alt_stack_base = ABSOLUTE (.)
+                0x00010928                PROVIDE (_alt_partition_data_load_addr, LOADADDR (.data))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x23
+ *(.comment)
+ .comment       0x00000000       0x23 obj/default/key.o
+                                 0x24 (size before relaxing)
+ .comment       0x00000000       0x24 ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x00000000       0x24 ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x00000000       0x24 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x00000000       0x24 ../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x00000000       0x24 ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x24 ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x24 ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x24 ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1d8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 ../keyled0_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/default/key.o
+ .debug_aranges
+                0x00000048       0x20 ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x00000068       0x20 ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x00000088       0x30 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x000000b8       0x28 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x000000e0       0x20 ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000100       0x20 ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000120       0x20 ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000140       0x20 ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000160       0x38 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x00000198       0x20 ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x000001b8       0x20 ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_pubnames
+                0x00000000      0x252
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x2c obj/default/key.o
+ .debug_pubnames
+                0x0000002c       0x6e ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_pubnames
+                0x0000009a       0x2b ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_pubnames
+                0x000000c5       0x32 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_pubnames
+                0x000000f7       0x3b ../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_pubnames
+                0x00000132       0x1f ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_pubnames
+                0x00000151       0x46 ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_pubnames
+                0x00000197       0x34 ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_pubnames
+                0x000001cb       0x2b ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_pubnames
+                0x000001f6       0x2b ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_pubnames
+                0x00000221       0x31 ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_info     0x00000000     0x1a8c
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x8a ../keyled0_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000008a      0x258 obj/default/key.o
+ .debug_info    0x000002e2      0x4a2 ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x00000784      0x323 ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x00000aa7       0x93 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x00000b3a      0x284 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x00000dbe      0x176 ../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x00000f34      0x29c ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x000011d0      0x21e ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000013ee      0x1bd ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x000015ab      0x16b ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00001716       0x99 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x000017af      0x16b ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000191a      0x172 ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_abbrev   0x00000000      0x761
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 ../keyled0_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012       0xdf obj/default/key.o
+ .debug_abbrev  0x000000f1      0x134 ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x00000225      0x14e ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x00000373       0x12 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00000385      0x10c ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x00000491       0x44 ../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x000004d5       0x88 ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000055d       0xa6 ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000603       0x8f ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00000692       0x3f ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x000006d1       0x12 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x000006e3       0x3f ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00000722       0x3f ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_line     0x00000000     0x1825
+ *(.debug_line)
+ .debug_line    0x00000000       0x66 ../keyled0_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000066      0x2af obj/default/key.o
+ .debug_line    0x00000315      0x2d2 ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x000005e7      0x253 ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x0000083a       0x6b ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x000008a5      0x252 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000af7       0x72 ../keyled0_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00000b69      0x221 ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x00000d8a      0x2b4 ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000103e      0x1e6 ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00001224      0x1bf ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x000013e3       0xab ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000148e      0x1bf ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x0000164d      0x1d8 ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_frame    0x00000000      0x27c
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x64 obj/default/key.o
+ .debug_frame   0x00000064       0x80 ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x000000e4       0x2c ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x00000110       0x2c ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x0000013c       0x48 ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000184       0x2c ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000001b0       0x48 ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000001f8       0x2c ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000224       0x2c ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000250       0x2c ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_str      0x00000000       0xd3
+ *(.debug_str)
+ .debug_str     0x00000000       0x23 obj/default/key.o
+ .debug_str     0x00000023       0x18 ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_str     0x0000003b       0x1a ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_str     0x00000055       0x12 ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_str     0x00000067       0x12 ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_str     0x00000079       0x12 ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_str     0x0000008b       0x12 ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_str     0x0000009d       0x12 ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_str     0x000000af       0x12 ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_str     0x000000c1       0x12 ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_loc      0x00000000      0x2db
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x81 obj/default/key.o
+ .debug_loc     0x00000081       0xac ../keyled0_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x0000012d       0x2b ../keyled0_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x00000158       0x2b ../keyled0_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x00000183       0x56 ../keyled0_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x000001d9       0x2b ../keyled0_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x00000204       0x56 ../keyled0_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x0000025a       0x2b ../keyled0_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_loc     0x00000285       0x2b ../keyled0_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_loc     0x000002b0       0x2b ../keyled0_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x10 ../keyled0_bsp//obj/HAL/src/crt0.o
+                0x0001a000                __alt_data_end = 0x1a000
+                0x0001a000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x00010928                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x00010928                PROVIDE (__alt_heap_start, end)
+                0x0001a000                PROVIDE (__alt_heap_limit, 0x1a000)
+OUTPUT(keyled0.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0x78
+ .debug_ranges  0x00000000       0x20 ../keyled0_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020       0x28 ../keyled0_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000048       0x30 ../keyled0_bsp/\libhal_bsp.a(alt_exception_entry.o)

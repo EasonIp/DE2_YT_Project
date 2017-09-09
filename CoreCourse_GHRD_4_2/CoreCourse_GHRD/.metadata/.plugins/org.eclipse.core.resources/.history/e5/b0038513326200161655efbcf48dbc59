@@ -1,0 +1,87 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include <stdio.h>
+#include "altera_avalon_pio_regs.h"
+#include "system.h"
+#include "altera_avalon_timer_regs.h"
+
+int WTD_BASE;
+
+void  WatchDog_Init(int MyWatchDog_BASE)
+{
+    //将系统的watchdog基地址传递给驱动使用的基地址
+    WTD_BASE = MyWatchDog_BASE;
+    /* 启动 WATCHDOG */
+   IOWR_ALTERA_AVALON_TIMER_CONTROL(WTD_BASE,
+           ALTERA_AVALON_TIMER_CONTROL_START_MSK);
+}
+
+/********************************************************************
+* 名    称：WatchDog_Feed()
+* 功    能：看门狗喂狗操作，向看门狗寄存器写入任意值即可完成看门狗复位
+* 入口参数：无
+* 出口参数：无
+********************************************************************/
+void  WatchDog_Feed(void)
+{
+    IOWR_ALTERA_AVALON_TIMER_PERIODL(WTD_BASE, 0x124);
+}
+
+
+void  DelayNS(alt_u32  dly)
+{
+    alt_u32  i;
+    for(; dly>0; dly--)
+    {
+        for(i=0; i<1000; i++)
+        {
+            #ifdef USE_WTD
+                WatchDog_Feed();    //喂狗
+            #endif
+        }
+    }
+}
+
+
+int main()
+{
+  alt_u8 i;
+  printf("Hello from Nios II!\n");
+
+  WatchDog_Init(WATCHDOG_BASE);
+  WatchDog_Feed();              // 进行喂狗操作
+  while(1){
+	  for(i=0; i<8; i++)
+	   {
+	 	  //点亮LED0和LED2，熄灭LED1和LED3
+	 	  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE, 0x5);
+	 	  DelayNS(3000);
+
+	 	  //点亮LED1和LED3，熄灭LED0和LED2
+	 	  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE, 0xa);
+	 	  DelayNS(3000);
+	   }
+	       //关闭LED0~3
+	   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE, 0xf);
+	   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE, 0x2);
+
+  }
+
+
+
+  return 0;
+}

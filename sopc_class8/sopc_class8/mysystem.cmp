@@ -1,0 +1,10 @@
+	component mysystem is
+		port (
+			clk_clk        : in  std_logic                    := 'X'; -- clk
+			reset_reset_n  : in  std_logic                    := 'X'; -- reset_n
+			uart_0_rxd     : in  std_logic                    := 'X'; -- rxd
+			uart_0_txd     : out std_logic;                           -- txd
+			pio_led_export : out std_logic_vector(3 downto 0)         -- export
+		);
+	end component mysystem;
+

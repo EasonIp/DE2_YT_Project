@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=E\:\\Learning\\B00_FPGA\\A01_DE2_115\\DE2_YT_Project\\T1_Hello_sopc\\code\\software\\hello_world
+newSoftwareExampleWizardPage.sopcinfoFile=E\:\\Learning\\B00_FPGA\\A01_DE2_115\\DE2_YT_Project\\T1_Hello_sopc\\code\\nios2_small.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=E\:\\Learning\\B00_FPGA\\A01_DE2_115\\DE2_YT_Project\\T1_Hello_sopc\\code\\software\\hello_world_bsp

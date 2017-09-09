@@ -1,0 +1,48 @@
+/*
+ * key.c
+ *
+ *  Created on: 2017-8-31
+ *      Author: EasonIp
+ */
+
+
+#include "stdio.h"
+#include "altera_avalon_pio_regs.h"
+#include "sys/alt_irq.h"
+#include "alt_types.h"
+volatile alt_u32 edge_capture;
+	static void key1_interrupts(void * context,alt_u32 id)
+	{
+		volatile alt_u32 *edge_capture_ptr=(volatile alt_u32*)context;
+		*edge_capture_ptr=IORD_ALTERA_AVALON_PIO_EDGE_CAP(KEY1_BASE);
+		IOWR_ALTERA_AVALON_PIO_EDGE_CAP(KEY1_BASE,0);
+	}
+
+	static void init_button_pio()
+	{
+		void *edge_capture_ptr=(void*)&edge_capture;
+		IOWR_ALTERA_AVALON_PIO_IRQ_MASK(PIO_KEY_BASE,0xf);
+		IOWR_ALTERA_AVALON_PIO_EDGE_CAP(PIO_KEY_BASE,0x0);
+		alt_irq_register(PIO_KEY_IRQ,edge_capture_ptr,key1_interrupts);
+	}
+	int main(void)
+	{
+		alt_u8 count,seg_code;
+		alt_u8 code_table[]={0x40,0x79,0x24,0x30,0x19,0x12,0x02,0x78,0x00,0x10,
+		0x08,0x03,0x46,0x21,0x06,0x0e,0x0c,0x18,0x09,0x3f};
+		init_button_pio();
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_SEG_BASE,code_table[0x0f]);
+		while(1)
+		{
+			while(edge_capture)
+				{edge_capture=0;
+				if(count<0x0f)
+				{count++;}
+				else
+				{count=0;}
+				seg_code=code_table[count];
+				IOWR_ALTERA_AVALON_PIO_DATA(PIO_SEG_BASE,seg_code);
+				}
+		}
+		return 0;
+	}

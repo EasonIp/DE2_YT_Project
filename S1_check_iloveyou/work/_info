@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ProgramData/Modelsim_Pjt/test
+T_opt
+!s110 1503303155
+VeNGD_2IL@PoDI@APV=eKf3
+04 17 4 work tb_check_iloveyou fast 0
+=1-68f728b1f8e4-599a95f2-279-1adc
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4;61
+R0
+vcheck_iloveyou
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 hg1[?K5TPVnRT;F^E57LN2
+IbH7QPKzaN:eD9VKecGUZ12
+Z2 dE:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou
+w1503301644
+8E:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/check_iloveyou.v
+FE:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/check_iloveyou.v
+L0 1
+Z3 OL;L;10.4;61
+!s108 1503308450.795000
+!s107 E:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/check_iloveyou.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|E:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/check_iloveyou.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vtb_check_iloveyou
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 zfinVST68ZkziQJJiNn>_0
+IUX>zIADU>Af:O<kY3AYLk3
+!s105 tb_check_iloveyou_sv_unit
+S1
+R2
+w1503300366
+8E:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/tb_check_iloveyou.sv
+FE:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/tb_check_iloveyou.sv
+L0 5
+R3
+!s108 1503308450.895000
+!s107 E:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/tb_check_iloveyou.sv|
+!s90 -reportprogress|300|-work|work|-sv|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|E:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/tb_check_iloveyou.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact

@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=E\:\\Learning\\B00_FPGA\\A01_DE2_115\\DE2_YT_Project\\T2_led_sopc\\code\\software\\led
+newSoftwareExampleWizardPage.sopcinfoFile=E\:\\Learning\\B00_FPGA\\A01_DE2_115\\DE2_YT_Project\\T2_led_sopc\\code\\led_sopc.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=E\:\\Learning\\B00_FPGA\\A01_DE2_115\\DE2_YT_Project\\T2_led_sopc\\code\\software\\led_bsp

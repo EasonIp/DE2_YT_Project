@@ -1,0 +1,276 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui",1471586333726
+started,bundle,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console",1471586333727
+started,bundle,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.editors",1471586333727
+started,bundle,org.eclipse.ui.forms,3.5.101.v20111011-1919,"org.eclipse.ui.forms",1471586333728
+started,bundle,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.ide",1471586333730
+started,bundle,org.eclipse.ui.navigator,3.5.101.v20120106-1355,"org.eclipse.ui.navigator",1471586333731
+started,bundle,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.resources",1471586333731
+started,bundle,org.eclipse.ui.net,1.2.100.v20111208-1155,"org.eclipse.ui.net",1471586333732
+started,bundle,org.eclipse.ui.views,3.6.0.v20110928-1505,"org.eclipse.ui.views",1471586333733
+started,bundle,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"org.eclipse.ui.workbench",1471586333734
+started,bundle,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.workbench.texteditor",1471586333735
+started,bundle,org.eclipse.update.configurator,3.3.100.v20100512,"org.eclipse.update.configurator",1471586333736
+started,bundle,org.eclipse.update.core,3.2.500.v20110330,"org.eclipse.update.core",1471586333737
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1471586333738
+started,bundle,com.altera.sbtgui.integration,13.0.0.156,"com.altera.sbtgui.integration",1471586333754
+started,bundle,com.altera.sbtgui.project,13.0.0.156,"com.altera.sbtgui.project",1471586333754
+started,bundle,com.altera.systemconsole,13.0.0.156,"com.altera.systemconsole",1471586333755
+started,bundle,com.altera.systemconsole.designs.plugin,13.0.0.156,"com.altera.systemconsole.designs.plugin",1471586333755
+started,bundle,com.altera.utilities,13.0.0.156,"com.altera.utilities",1471586333756
+os,sysinfo,,,"win32",1471586333759
+arch,sysinfo,,,"x86",1471586333759
+ws,sysinfo,,,"win32",1471586333759
+locale,sysinfo,,,"zh_CN",1471586333759
+processors,sysinfo,,,"4",1471586333759
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1471586333759
+java.runtime.version,sysinfo,,,"1.6.0_23-b05",1471586333759
+java.specification.name,sysinfo,,,"Java Platform API Specification",1471586333759
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1471586333759
+java.specification.version,sysinfo,,,"1.6",1471586333759
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1471586333759
+java.version,sysinfo,,,"1.6.0_23",1471586333759
+java.vm.info,sysinfo,,,"mixed mode",1471586333759
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1471586333759
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1471586333759
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1471586333759
+java.vm.specification.version,sysinfo,,,"1.0",1471586333759
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1471586333759
+java.vm.version,sysinfo,,,"19.0-b09",1471586333759
+started,bundle,com.altera.sbtgui.launch,13.0.0.156,"com.altera.sbtgui.launch",1471586335262
+opened,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1471586338500
+started,bundle,org.eclipse.debug.ui,3.7.102.v20111129-1423_r372,"org.eclipse.debug.ui",1471586343303
+started,bundle,org.eclipse.cdt.debug.core,7.1.0.201202111925,"org.eclipse.cdt.debug.core",1471586345516
+started,bundle,org.eclipse.cdt.launch,7.0.0.201202111925,"org.eclipse.cdt.launch",1471586345516
+started,bundle,com.altera.sbtgui.core,13.0.0.156,"com.altera.sbtgui.core",1471586345516
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471586346599
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471586352261
+started,bundle,org.eclipse.cdt.debug.mi.ui,6.1.1.201202111925,"org.eclipse.cdt.debug.mi.ui",1471586352442
+started,bundle,org.eclipse.cdt.dsf,2.2.0.201202111925,"org.eclipse.cdt.dsf",1471586352459
+started,bundle,org.eclipse.cdt.dsf.gdb,4.0.2.201202111925,"org.eclipse.cdt.dsf.gdb",1471586352462
+started,bundle,org.eclipse.cdt.dsf.gdb.ui,2.2.1.201202111925,"org.eclipse.cdt.dsf.gdb.ui",1471586352464
+started,bundle,org.eclipse.cdt.debug.mi.core,7.1.1.201202111925,"org.eclipse.cdt.debug.mi.core",1471586352486
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471586356477
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588510091
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1471588519841
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1471588524188
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588528674
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588532949
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471588532996
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471588535648
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588545221
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588545299
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588545377
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588549347
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1471588554666
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1471588559104
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.shiftLeft",1471588562260
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588564189
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588567563
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1471588577126
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1471588580106
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1471588584427
+executed,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.project.buildAll",1471588586595
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588587122
+started,bundle,org.eclipse.cdt.codan.checkers.ui,1.0.0.201202111925,"org.eclipse.cdt.codan.checkers.ui",1471588592934
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588600720
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471588600751
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471588606031
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471588609753
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471588613799
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589003130
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1471589007651
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589008778
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589014256
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589015632
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1471589019306
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.lineEnd",1471589019862
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1471589021127
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471589033530
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589034080
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589034136
+opened,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589034967
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589035090
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589037378
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589037480
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589037855
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589040612
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1471589043283
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589044738
+closed,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589044741
+started,bundle,org.eclipse.cdt.mylyn.ui,3.6.0.v20110608-1400,"org.eclipse.cdt.mylyn.ui",1471589044792
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1471589054982
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1471589070590
+executed,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.project.buildAll",1471589073302
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589073683
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589091497
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589095179
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589104653
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471589104682
+started,bundle,org.eclipse.cdt.debug.ui,7.1.2.201202111925,"org.eclipse.cdt.debug.ui",1471589105736
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471589113196
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471589116710
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589124281
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589217217
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589218639
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1471589221827
+executed,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.project.buildAll",1471589222863
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589223304
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589235224
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589236846
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589237865
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589240963
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589246249
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471589246281
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589248503
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589249212
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589252780
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471589257154
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471589261696
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589271648
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1471589271648
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589272207
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589275059
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589532802
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471589535435
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589536398
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589536520
+opened,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589537287
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589537397
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589538297
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589538400
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589541602
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589575587
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471589577349
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589578675
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589581506
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589581864
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589584328
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1471589584332
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589585930
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589587805
+closed,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589587805
+executed,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.project.buildAll",1471589589659
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589590121
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589619333
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589624245
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589629514
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471589636148
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589638748
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471589640190
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589732555
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589743989
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589744036
+opened,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589744913
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589745061
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589745206
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589745303
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589747218
+closed,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589747218
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589751702
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589751749
+opened,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589752482
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589752622
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589754675
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589754784
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589756780
+closed,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589756781
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589767798
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589767845
+opened,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589768688
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589768863
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589769388
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589769486
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589771341
+closed,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589771341
+executed,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.project.buildAll",1471589776114
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589776660
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589789969
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471589789991
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589793248
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471589798497
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471589802679
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589889447
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589890414
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589898680
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589933280
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471589933311
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471589934049
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589941919
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589957931
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471589961266
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471589966505
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471589970553
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590071571
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590078879
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471590084456
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471590088525
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590222278
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471590222309
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471590223235
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590224043
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590225337
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590226555
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590534054
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471590535283
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590536339
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590538002
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590538439
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590539034
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1471590539034
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471590539892
+executed,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.project.buildAll",1471590540955
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590541329
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590553877
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590558702
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590566676
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590568692
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471590571824
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471590574218
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590842470
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590847847
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471590851918
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471590856510
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590928291
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1471590928351
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471590929065
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591072137
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591074357
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591075430
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1471591075820
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591076335
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591136165
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471591136212
+executed,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.project.buildAll",1471591139068
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591139575
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591158686
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591163373
+error,log,,,"No Byte Stream Services found for Nios II Console View",1471591167165
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8",1471591171230
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591355013
+activated,view,org.eclipse.ui.views,3.6.0.v20110928-1505,"org.eclipse.ui.views.ContentOutline",1471591359134
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591386541
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591476592
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1471591476622
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591485144
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591493444
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591494941
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591496220
+closed,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1471591496517
+started,bundle,org.eclipse.compare,3.5.202.R37x_v20111109-0800,"org.eclipse.compare",1471591496891
+stopped,bundle,org.eclipse.cdt.build.crossgcc,1.0.2.201202111925,"org.eclipse.cdt.build.crossgcc",1471591497328
+stopped,bundle,org.eclipse.cdt.codan.checkers.ui,1.0.0.201202111925,"org.eclipse.cdt.codan.checkers.ui",1471591497328
+stopped,bundle,com.altera.debug.cdi.gdb.plugin,13.0.0.156,"com.altera.debug.cdi.gdb.plugin",1471591497328
+stopped,bundle,com.altera.sbtgui.launch,13.0.0.156,"com.altera.sbtgui.launch",1471591498332
+stopped,bundle,com.altera.sbtgui.ui,13.0.0.156,"com.altera.sbtgui.ui",1471591498334
+stopped,bundle,com.altera.sbtgui.project,13.0.0.156,"com.altera.sbtgui.project",1471591498334
+stopped,bundle,org.eclipse.cdt.codan.checkers,1.0.1.201202111925,"org.eclipse.cdt.codan.checkers",1471591498334
+stopped,bundle,org.eclipse.cdt.codan.ui.cxx,2.0.0.201202111925,"org.eclipse.cdt.codan.ui.cxx",1471591498334
+stopped,bundle,org.eclipse.cdt.codan.core.cxx,1.0.0.201202111925,"org.eclipse.cdt.codan.core.cxx",1471591498334
+stopped,bundle,org.eclipse.cdt.launch.remote,2.3.0.201202111925,"org.eclipse.cdt.launch.remote",1471591498336
+stopped,bundle,org.eclipse.cdt.debug.mi.ui,6.1.1.201202111925,"org.eclipse.cdt.debug.mi.ui",1471591498336
+stopped,bundle,org.eclipse.cdt.debug.mi.core,7.1.1.201202111925,"org.eclipse.cdt.debug.mi.core",1471591498336
+stopped,bundle,org.eclipse.cdt.debug.ui.memory.memorybrowser,1.2.100.201202111925,"org.eclipse.cdt.debug.ui.memory.memorybrowser",1471591498338
+stopped,bundle,org.eclipse.cdt.debug.ui.memory.search,1.2.1.201202111925,"org.eclipse.cdt.debug.ui.memory.search",1471591498339
+stopped,bundle,org.eclipse.cdt.dsf.gdb.ui,2.2.1.201202111925,"org.eclipse.cdt.dsf.gdb.ui",1471591498340
+stopped,bundle,org.eclipse.cdt.dsf.ui,2.2.1.201202111925,"org.eclipse.cdt.dsf.ui",1471591498344

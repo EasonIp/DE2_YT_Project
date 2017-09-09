@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=G\:\\XiaoMeige_fpga_System\\class\\sopc_class\\CoreCourse_GHRD\\software\\hello
+newSoftwareExampleWizardPage.sopcinfoFile=G\:\\XiaoMeige_fpga_System\\class\\sopc_class\\CoreCourse_GHRD\\mysystem.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=G\:\\XiaoMeige_fpga_System\\class\\sopc_class\\CoreCourse_GHRD\\software\\hello_bsp

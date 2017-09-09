@@ -1,0 +1,9 @@
+
+State Machine - |Segs_sopc|seg7:inst|seg7_nios2_qsys:nios2_qsys|seg7_nios2_qsys_nios2_oci:the_seg7_nios2_qsys_nios2_oci|seg7_nios2_qsys_jtag_debug_module_wrapper:the_seg7_nios2_qsys_jtag_debug_module_wrapper|seg7_nios2_qsys_jtag_debug_module_tck:the_seg7_nios2_qsys_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

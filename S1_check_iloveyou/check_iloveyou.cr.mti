@@ -1,0 +1,15 @@
+E:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/check_iloveyou.v {1 {vlog -work work -vopt -stats=none E:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/check_iloveyou.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module check_iloveyou
+
+Top level modules:
+	check_iloveyou
+
+} {} {}} E:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/tb_check_iloveyou.sv {1 {vlog -work work -vopt -sv -stats=none E:/Learning/B00_FPGA/A01_DE2_115/DE2_YT_Project/S1_check_iloveyou/code/tb_check_iloveyou.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module tb_check_iloveyou
+
+Top level modules:
+	tb_check_iloveyou
+
+} {} {}}

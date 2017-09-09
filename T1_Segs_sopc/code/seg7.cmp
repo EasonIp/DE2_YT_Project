@@ -1,0 +1,8 @@
+	component seg7 is
+		port (
+			clk_clk              : in  std_logic                    := 'X'; -- clk
+			reset_reset_n        : in  std_logic                    := 'X'; -- reset_n
+			seg7_external_export : out std_logic_vector(6 downto 0)         -- export
+		);
+	end component seg7;
+

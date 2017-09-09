@@ -1,0 +1,127 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include <stdio.h>
+#include "system.h"
+#include "io.h"
+#include "unistd.h"
+#include "meitu.h"
+
+#define TFT_BASE TFT_SRAM_BASE
+
+
+#define __TFT_CALC_ADDRESS(BASE, offset) \
+  ((void *)(((alt_u8*)BASE) + ((offset) * (16/8))))
+
+#define TFT_WR(addr, data) \
+  __builtin_sthio (__TFT_CALC_ADDRESS ((TFT_BASE), (addr)), (data))
+
+#define TFT_WR_XY(x,y, data) \
+  __builtin_sthio (__TFT_CALC_ADDRESS ((TFT_BASE), (x + y*480)), (data))
+
+int main()
+{
+  printf("Hello from Nios II!\n");
+  int i,j,k,l;
+  int uart_status;
+
+  for(i=0;i<480*272;i++)
+	  TFT_WR(i, ~0xffff);
+
+  for(i=0;i<480*272;i++)
+	  TFT_WR(i, gImage_meitu[i<<1]<<8 | gImage_meitu[(i<<1) + 1]);
+
+  for(i=0;i<480*272*2;i++)
+  {
+	  while(!(IORD_ALTERA_AVALON_UART_STATUS(UART_0_BASE) & ALTERA_AVALON_UART_STATUS_TRDY_MSK));
+	  IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, gImage_meitu[i]);
+
+  }
+
+  while(1);
+//  TFT_WR(0, 0xffff);
+//  TFT_WR(479, 0xffff);
+//  TFT_WR(480*271, 0xffff);
+//  TFT_WR(480*272 - 1, 0xffff);
+//
+//
+//  for(j=0;j<67;j++)
+//	  for(i=0;i<479;i++)
+//		  TFT_WR_XY(i,j,0xf800);
+//
+//  for(j=68;j<135;j++)
+//	  for(i=0;i<479;i++)
+//		  TFT_WR_XY(i,j,0x07e0);
+//
+//  for(j=136;j<203;j++)
+//	  for(i=0;i<479;i++)
+//		  TFT_WR_XY(i,j,0x001f);
+//
+//  for(j=204;j<271;j++)
+//	  for(i=0;i<479;i++)
+//		  TFT_WR_XY(i,j,0xffff);
+//
+//  while(1){
+//
+//
+//
+//	  for(i=0;i<100;i++)
+//	  	  for(j=50;j<150;j++)
+//	  		  TFT_WR_XY(j,i,0xf000);
+//
+//	  usleep(40000);
+//
+//	  for(i=0;i<100;i++)
+//	  	  	  for(j=50;j<150;j++)
+//	  	  		  TFT_WR_XY(j,i,0x0000);
+//
+//
+//	  for(i=100;i<200;i++)
+//	  	  	  for(j=50;j<150;j++)
+//	  	  		  TFT_WR_XY(j,i,0xf000);
+//
+//	  usleep(40000);
+//
+//	  for(i=100;i<200;i++)
+//			  for(j=50;j<150;j++)
+//				  TFT_WR_XY(j,i,0x0000);
+//
+//
+//	  for(i=100;i<200;i++)
+//	  	  	  	  for(j=150;j<250;j++)
+//	  	  	  		  TFT_WR_XY(j,i,0xf000);
+//
+//	  	  usleep(40000);
+//
+//	  for(i=100;i<200;i++)
+//			  for(j=150;j<250;j++)
+//				  TFT_WR_XY(j,i,0x0000);
+//
+//
+//	  for(i=0;i<100;i++)
+//	  	  	  	  for(j=150;j<250;j++)
+//	  	  	  		  TFT_WR_XY(j,i,0xf000);
+//
+//	  	  usleep(40000);
+//
+//	  for(i=0;i<100;i++)
+//			  for(j=150;j<250;j++)
+//				  TFT_WR_XY(j,i,0x0000);
+//
+//  };
+
+  return 0;
+}

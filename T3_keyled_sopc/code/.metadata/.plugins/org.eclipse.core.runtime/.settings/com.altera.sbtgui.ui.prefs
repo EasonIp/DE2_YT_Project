@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=E\:\\Learning\\B00_FPGA\\A01_DE2_115\\DE2_YT_Project\\T3_keyled_sopc\\code\\software\\keyled0
+newSoftwareExampleWizardPage.sopcinfoFile=E\:\\Learning\\B00_FPGA\\A01_DE2_115\\DE2_YT_Project\\T3_keyled_sopc\\code\\keyled.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=E\:\\Learning\\B00_FPGA\\A01_DE2_115\\DE2_YT_Project\\T3_keyled_sopc\\code\\software\\keyled0_bsp
